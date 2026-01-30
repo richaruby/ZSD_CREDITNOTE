@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Credit Note"
+  },
+  "ui5AppDetails": {
+    "appId": "zsdcreditnote"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_7D1AC871216404D64A88B7A78DE62C7B44649472_TM",
+    "semanticObject": "ServiceInvoice",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_7D1AC871216404D64A88B7A78DE62C7B44649472_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Credit Note",
+        "icon": "sap-icon://legend"
+      }
+    }
+  ]
+}

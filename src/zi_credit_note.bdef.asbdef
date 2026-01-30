@@ -1,0 +1,19 @@
+managed implementation in class zbp_i_credit_note unique;
+strict ( 2 );
+
+define behavior for ZI_CREDIT_NOTE alias ZI_CREDIT_NOTE_DOC
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+ action ( features : instance ) ZPRINT result [1] $self;
+  update;
+
+  field ( readonly ) BillingDocument;
+   mapping for ZTB_CREDIT_NOTE
+    {
+      BillingDocument = BillingDocument;
+      base64_3          = base64_3;
+    }
+}

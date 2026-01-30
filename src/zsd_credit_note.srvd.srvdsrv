@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition'
+define service ZSD_CREDIT_NOTE {
+  expose ZC_CREDIT_NOTE;
+}
